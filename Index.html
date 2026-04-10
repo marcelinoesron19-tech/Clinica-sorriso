@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Sorriso Perfeito - Odontologia</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+        header { background: linear-gradient(135deg, #4CAF50, #2196F3); color: white; text-align: center; padding: 2rem 1rem; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        nav { background: #fff; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { margin: 0 1rem; }
+        nav a { text-decoration: none; color: #4CAF50; font-weight: bold; }
+        nav a:hover { color: #2196F3; }
+        .hero { background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f8ff" width="1200" height="600"/><circle fill="%23fff" cx="600" cy="300" r="200"/><path fill="%234CAF50" d="M500 250 Q600 200 700 250 T800 300"/></svg>') center/cover; padding: 4rem 1rem; text-align: center; color: white; }
+        .hero h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .btn { background: #4CAF50; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 1rem; transition: background 0.3s; }
+        .btn:hover { background: #45a049; }
+        .btn-whatsapp { background: #25D366; }
+        .btn-whatsapp:hover { background: #20b358; }
+        section { padding: 3rem 1rem; max-width: 1200px; margin: 0 auto; }
+        .services { background: #f9f9f9; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .service { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        .contact { text-align: center; }
+        .contact-info { max-width: 600px; margin: 0 auto 2rem; }
+        .contact-info h3 { color: #4CAF50; margin-bottom: 1rem; }
+        footer { background: #333; color: white; text-align: center; padding: 1rem; }
+        @media (max-width: 768px) { header h1 { font-size: 2rem; } nav ul { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clínica Sorriso Perfeito</h1>
+        <p>Seu sorriso saudável e brilhante!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <h2>Cuidados odontológicos de excelência em [Sua Cidade]</h2>
+        <p>Entre em contato e agende sua consulta pelo WhatsApp.</p>
+        <a href="#contato" class="btn">Falar no WhatsApp</a>
+    </section>
+    <section id="servicos" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>Clareamento Dental</h3>
+                <p>Sorriso branco e natural em poucas sessões.</p>
+            </div>
+            <div class="service">
+                <h3>Implantes</h3>
+                <p>Substituição de dentes com tecnologia avançada.</p>
+            </div>
+            <div class="service">
+                <h3>Ortodontia</h3>
+                <p>Aparelhos invisíveis para alinhamento perfeito.</p>
+            </div>
+            <div class="service">
+                <h3>Limpeza</h3>
+                <p>Profilaxia completa para saúde bucal.</p>
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Com 10 anos de experiência, atendemos famílias em Pernambuco com os melhores dentistas. Equipamentos modernos e atendimento humanizado.</p>
+    </section>
+    <section id="contato" class="contact">
+        <h2>Entre em Contato</h2>
+        <div class="contact-info">
+            <h3>WhatsApp Direto</h3>
+            <p><strong>(81) 9160-4588</strong> - Resposta rápida!</p>
+            <a href="https://wa.me/55819160-4588?text=Olá! Gostaria de agendar uma consulta na Clínica Sorriso Perfeito." class="btn btn-whatsapp" target="_blank">Abrir WhatsApp</a>
+            <p>Ou envie email: contato@sorrisoperfeito.com.br</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Clínica Sorriso Perfeito. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        // Smooth scroll para links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
